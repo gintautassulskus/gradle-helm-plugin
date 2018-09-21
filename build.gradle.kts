@@ -32,7 +32,7 @@ dependencies {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
-    kotlinOptions.freeCompilerArgs = listOf("-Xenable-jvm-default", "-Xenable-jvm-default")
+    kotlinOptions.freeCompilerArgs = listOf("-Xenable-jvm-default", "-Xjvm-default=enable")
 }
 
 
