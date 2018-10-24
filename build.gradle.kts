@@ -53,19 +53,19 @@ gradlePlugin {
     isAutomatedPublishing = true
 
     (plugins) {
-        "helmCommandsPlugin" {
+        create("helmCommandsPlugin") {
             id = "org.unbroken-dome.helm-commands"
             implementationClass = "org.unbrokendome.gradle.plugins.helm.command.HelmCommandsPlugin"
         }
-        "helmPlugin" {
+        create("helmPlugin") {
             id = "org.unbroken-dome.helm"
             implementationClass = "org.unbrokendome.gradle.plugins.helm.HelmPlugin"
         }
-        "helmPublishPlugin" {
+        create("helmPublishPlugin") {
             id = "org.unbroken-dome.helm-publish"
             implementationClass = "org.unbrokendome.gradle.plugins.helm.publishing.HelmPublishPlugin"
         }
-        "helmReleasesPlugin" {
+        create("helmReleasesPlugin") {
             id = "org.unbroken-dome.helm-releases"
             implementationClass = "org.unbrokendome.gradle.plugins.helm.release.HelmReleasesPlugin"
         }
